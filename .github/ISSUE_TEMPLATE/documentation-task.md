@@ -12,7 +12,8 @@ assignees: kgerot
 Description of documentation needs
 
 - **Linked Issues**: none
-- **Link**: [Wiki or File](https://github.com/kgerot/electron-boilerplate/)   **OR** **Branch**: [issn-some-desc](https://github.com/kgerot/electron-boilerplate/tree/issn-some-desc)
+- **Link**: [Wiki or File](https://github.com/kgerot/electron-boilerplate/)
+- **Branch**: [issn-some-desc](https://github.com/kgerot/electron-boilerplate/tree/issn-some-desc)
 
 ### Files
 
