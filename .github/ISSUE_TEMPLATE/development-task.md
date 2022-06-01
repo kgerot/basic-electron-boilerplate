@@ -23,6 +23,6 @@ What files (or systems) would this solution or enhancement affect?
 
 ### Tasks
 
-**[Definition of Done]**:  Define what it means for this task to be complete in paragraph form. The definition is high-level and goes beyond
+- [ ] task
 
-- [ ]
+**[Definition of Done]**:  Define what it means for this task to be complete in paragraph form. The definition is high-level and goes beyond the tasklist
