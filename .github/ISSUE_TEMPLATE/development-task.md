@@ -15,7 +15,6 @@ Describe the task in detail
     - **Related**: none
     - **Blocks**: none
     - **Blocked By**: none
-    - **Other**: none
 - **Branch**: [issn-some-desc](https://github.com/kgerot/electron-boilerplate/tree/issn-some-desc)    |
 - **Type**: [hotfix/bugfix/feature/other]
 
