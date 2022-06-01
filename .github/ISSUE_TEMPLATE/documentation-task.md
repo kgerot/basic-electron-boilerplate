@@ -13,7 +13,7 @@ Description of documentation needs
 
 - **Linked Issues**: tags
 - **Link**: (no link if comments)
-- **Branch**: [2-css-minimization](https://github.com/kgerot/electron-boilerplate/tree/2-css-minimization)
+- **Branch**: [issn-some-desc](https://github.com/kgerot/electron-boilerplate/tree/issn-some-desc)
 
 ### Files
 
