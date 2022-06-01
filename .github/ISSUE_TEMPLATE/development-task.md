@@ -12,7 +12,7 @@ assignees: kgerot
 |                  |                                  |
 | :--------------  | :------------------------------- |
 | Related Issues   | [issue tags]                     |
-| Branch Name      | [issn-some-desc](branch link)    |
+| Branch Name      | [issn-some-desc](https://github.com/kgerot/electron-boilerplate/tree/issn-some-desc)    |
 | Type             | [hotfix/bugfix/feature/other]    |
 
 Describe the feature in detail
