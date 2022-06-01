@@ -9,13 +9,15 @@ assignees: kgerot
 
 ### Description
 
-|                  |                                  |
-| :--------------  | :------------------------------- |
-| Related Issues   | [issue tags]                     |
-| Branch Name      | [issn-some-desc](https://github.com/kgerot/electron-boilerplate/tree/issn-some-desc)    |
-| Type             | [hotfix/bugfix/feature/other]    |
-
 Describe the task in detail
+
+- **Linked Issues**
+    - **Related**: none
+    - **Blocks**: none
+    - **Blocked By**: none
+    - **Other**: none
+- **Branch**: [issn-some-desc](https://github.com/kgerot/electron-boilerplate/tree/issn-some-desc)    |
+- **Type**: [hotfix/bugfix/feature/other]
 
 ### Files 
 
