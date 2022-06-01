@@ -1,2 +1,10 @@
-# electron-boilerplate
-Boilerplate for basic electron applications
+*build tag*
+*dependencies tag(s)*
+
+# Electron Boilerplate
+
+
+## Install & Launch
+
+
+## Adding Extras
