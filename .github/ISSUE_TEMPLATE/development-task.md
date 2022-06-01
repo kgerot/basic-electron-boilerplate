@@ -9,11 +9,11 @@ assignees: kgerot
 
 ### Description
 
- |                       |                                                |
+|                  |                                  |
 | :--------------  | :------------------------------- |
-| Related Issues | [issue tags]                            |
-| Branch Name  | [branch name](branch link)   |
-| Type                | [hotfix/bugfix/feature/other] |
+| Related Issues   | [issue tags]                     |
+| Branch Name      | [branch name](branch link)       |
+| Type             | [hotfix/bugfix/feature/other]    |
 
 Describe the feature in detail
 
