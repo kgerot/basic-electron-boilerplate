@@ -25,4 +25,4 @@ What files (or systems) would this solution or enhancement affect?
 
 - [ ] task
 
-**[Definition of Done]**:  Define what it means for this task to be complete in paragraph form. The definition is high-level and goes beyond the tasklist. They should be easily measurable (relatively). To see more info on this, see [Wiki: Definition of Done](https://github.com/kgerot/electron-boilerplate/wiki/Definition-of-Done)
+**[Definition of Done]**:  Define what it means for this task to be complete in paragraph form. To see more info on this, see [Wiki: Definition of Done](https://github.com/kgerot/electron-boilerplate/wiki/Definition-of-Done)

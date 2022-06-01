@@ -13,15 +13,13 @@ Describe the error or deficiency in detail
 
 ### Reproducibility
 
-| Name                 | Specifications                         | 
-| :----------------- | :------------------------------- | 
-| **Device Type** | e.g. iPhoneX, Surface Book 2  |
-| **OS**                | e.g. Windows 10, IOS 8.1        |
+- **Device Type** : e.g. iPhoneX, Surface Book 2
+- **OS**: e.g. Windows 10, IOS 8.1
 
-Steps to Reproduce:
+**Steps to Reproduce**:
 1. step 1
 
-#### Screenshots
+**Screenshots**:
 
 Include any screenshots of the issue
 
