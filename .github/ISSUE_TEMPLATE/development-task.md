@@ -12,7 +12,7 @@ assignees: kgerot
 |                  |                                  |
 | :--------------  | :------------------------------- |
 | Related Issues   | [issue tags]                     |
-| Branch Name      | [branch name](branch link)       |
+| Branch Name      | [issn-some-desc](branch link)    |
 | Type             | [hotfix/bugfix/feature/other]    |
 
 Describe the feature in detail
