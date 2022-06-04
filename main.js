@@ -17,7 +17,7 @@ const createWindow = (mode) => {
         icon: path.join(__dirname, '/src/icons/blue-logo.png')
     })
     // files required for current window (last must be index)
-    win.loadFile(`src/page2.html`); 
+    win.loadFile(`src/page.html`); 
     win.loadFile('src/index.html');
     win.maximize();
     win.show();
