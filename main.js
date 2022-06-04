@@ -14,7 +14,7 @@ const createWindow = (mode) => {
         },
         show: false,
         useContentSize: true,
-        icon: path.join(__dirname, '/src/icons/128x128.png')
+        icon: path.join(__dirname, '/src/icons/blue-logo.png')
     })
     // files required for current window (last must be index)
     win.loadFile(`src/page2.html`); 

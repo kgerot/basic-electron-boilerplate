@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html mode="light">
+    <head>
+        <script>
+            if (localStorage.getItem("mode") === "dark") {
+                document.documentElement.setAttribute('mode', 'dark')
+            } else {
+                document.documentElement.setAttribute('mode', 'light')
+            }
+        </script>
+        <meta charset="UTF-8">
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+        <link href="style/bootstrap.css" type="text/css" rel="stylesheet"> 
+        <link href="style/main.css" type="text/css" rel="stylesheet">
+        <title>Boilerplate</title>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar main-nav">
+            <div>
+                <img class="navbar-brand px-4 mx-2 my-1" src="img/blue-logo.png" alt="logo" height="60px">
+            </div>
+            <div>
+                <a href="#"><img class="px-4 mx-2" src="img/gear-solid-tin.svg" alt="settings" height="20px"></a>
+            </div>
+        </nav>
+        <nav class="navbar grn-bk-l"></nav>
+        <nav class="navbar blu-bk-d">
+            <div class="row sub-navbar">
+                <div class="nav-items">
+                    <a class="nav-i white-txt current-nav" href="#">Home</a>
+                    <a class="nav-i white-txt" href="page2.html">Page 2</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Start Body -->
+        <div class="container-fluid px-4 py-4">
+            <div class="container text-center my-3">
+                <img class="mb-3" src="img/blue-logo.png" width="75px">
+                <h1>Welcome to the <b>Electron Boilerplate</b></h1>
+            </div>
+            <div class="container">
+                
+            </div>
+        </div>
+
+        <!-- Dark/Light Mode Toggle -->
+        <div class="mode px-4">
+            <button class="mode-button" id="mode-toggle" aria-label="Toggle Dark or Light Mode">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    
+        <!-- Scripts -->
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="../renderer.js"></script>
+    </body>
+</html>

@@ -1,0 +1,326 @@
+/**** FONT DEFINITIONS ***/
+
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans/OpenSans-ExtraBold.ttf') format("truetype");
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans/OpenSans-Bold.ttf') format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans/OpenSans-Light.ttf') format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans/OpenSans-ExtraBoldItalic.ttf') format("truetype");
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans/OpenSans-BoldItalic.ttf') format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans/OpenSans-Italic.ttf') format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../fonts/OpenSans/OpenSans-LightItalic.ttf') format("truetype");
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*** COLOR DEFINITIONS ***/
+
+:root{
+    --black: #141414;
+    --void: #2F2F2F;
+    --charcoal: #737373;
+    --shark: #A6A6A6;
+    --tin: #D8D4D4;
+    --ghost: #FFFFFF;
+    /* Reds */
+    --redwood: #A55850;
+    --rose: #BD7C75;
+    --grapefruit: #D1A49F;
+    /* Yellows */  
+    --marigold: #EDAD45;
+    --goldenrod: #F2C57D;
+    --wheat: #F8DEB5;
+    /* Greens */
+    --pine: #70815F;      
+    --clover: #849772;     
+    --sage: #ADBAA1;        
+    /* Blues */
+    --atlantic: #718E98;  
+    --oxygen: #A0B4BA;     
+    --glacier: #C4D0D4;     
+    /* Purples */
+    --plum: #74698C;      
+    --wisteria: #9890AB;   
+    --seltzer: #BEB9CA;    
+}
+
+
+/*** MODE STYLE DEFINITIONS ***/
+
+/* 
+    GLOBAL COLORS
+    Primary Background:     --p-bk
+    Accent Background(s):   --a-bk-x
+    Primary Text:           --p-txt
+    Accent Text(s):         --a-txt-x
+    Offset Color:           --off
+    COLOR MODE FUNCTIONALITY
+    Icon on Toggle:         --toggle-img
+    Toggle Position:        --toggle-pos
+    Toggle Inlay Color:     --toggle-back
+    Toggle Switch Color:    --toggle-front
+*/
+:root[mode="light"] {
+    --p-bk: var(--ghost);
+    --a-bk-r: var(--grapefruit);
+    --a-bk-y: var(--wheat);
+    --a-bk-g: var(--sage);
+    --a-bk-b: var(--glacier);
+    --a-bk-p: var(--wisteria);
+    --a-bk-k: var(--tin);
+    --p-txt: var(--void);
+    --a-txt-r: var(--redwood);
+    --a-txt-y: var(--marigold);
+    --a-txt-g: var(--pine);
+    --a-txt-b: var(--atlantic);
+    --a-txt-p: var(--plum);
+    --a-txt-k: var(--charcoal);
+    --off: var(--tin);
+    /* toggle */
+    --toggle-back: var(--wheat);
+    --toggle-front: var(--marigold);
+    --toggle-img: url('../img/sun-solid-ghost.svg');
+    --toggle-pos: 0px;
+}
+:root[mode="dark"] {
+    --p-bk: var(--void);
+    --a-bk-r: var(--redwood);
+    --a-bk-y: var(--marigold);
+    --a-bk-g: var(--pine);
+    --a-bk-b: var(--atlantic);
+    --a-bk-p: var(--plum);
+    --a-bk-k: var(--charcoal);
+    --p-txt: var(--ghost);
+    --a-txt-r: var(--grapefruit);
+    --a-txt-y: var(--wheat);
+    --a-txt-g: var(--sage);
+    --a-txt-b: var(--glacier);
+    --a-txt-p: var(--wisteria);
+    --a-txt-k: var(--tin);
+    --off: var(--charcoal);
+    /*toggle*/
+    --toggle-back: var(--oxygen);
+    --toggle-front: var(--void);
+    --toggle-img: url('../img/moon-solid-atlantic.svg');
+    --toggle-pos: 2em;
+}
+
+/*** COLOR CLASS DEFINITIONS ***/
+
+/* Text Colors */
+
+.black-txt { color: var(--void); }
+.white-txt { color: var(--ghost); }
+.red-txt-d { color: var(--redwood); }
+.red-txt-m { color: var(--rose); }
+.red-txt-l { color: var(--grapefruit); }
+.ylw-txt-d { color: var(--marigold); }
+.ylw-txt-m { color: var(--goldenrod); }
+.ylw-txt-l { color: var(--wheat); }
+.grn-txt-d { color: var(--pine); }
+.grn-txt-m { color: var(--clover); }
+.grn-txt-l { color: var(--sage); }
+.blu-txt-d { color: var(--atlantic); }
+.blu-txt-m { color: var(--oxygen); }
+.blu-txt-l { color: var(--glacier); }
+.prp-txt-d { color: var(--plum); }
+.prp-txt-m { color: var(--wisteria); }
+.prp-txt-l { color: var(--seltzer); }
+.gry-txt-d { color: var(--charcoal); }
+.gry-txt-m { color: var(--shark); }
+.gry-txt-l { color: var(--tin); }
+
+/* Link Colors */
+
+.black-txt a:hover { color: var(--charcoal); }
+.white-txt a:hover { color: var(--shark); }
+.red-txt-d a:hover { color: var(--rose); }
+.red-txt-m a:hover { color: var(--redwood); }
+.red-txt-l a:hover { color: var(--rose); }
+.ylw-txt-d a:hover { color: var(--goldenrod); }
+.ylw-txt-m a:hover { color: var(--marigold); }
+.ylw-txt-l a:hover { color: var(--goldenrod); }
+.grn-txt-d a:hover { color: var(--clover); }
+.grn-txt-m a:hover { color: var(--pine); }
+.grn-txt-l a:hover { color: var(--clover); }
+.blu-txt-d a:hover { color: var(--oxygen); }
+.blu-txt-m a:hover { color: var(--atlantic); }
+.blu-txt-l a:hover { color: var(--oxygen); }
+.prp-txt-d a:hover { color: var(--wisteria); }
+.prp-txt-m a:hover { color: var(--plum); }
+.prp-txt-l a:hover { color: var(--wisteria); }
+.gry-txt-d a:hover { color: var(--shark); }
+.gry-txt-m a:hover { color: var(--tin); }
+.gry-txt-l a:hover { color: var(--shark); }
+
+
+/* Background Colors */
+
+.black-bk { background-color: var(--void); }
+.white-bk { background-color: var(--ghost); }
+.red-bk-d { background-color: var(--redwood); }
+.red-bk-m { background-color: var(--rose); }
+.red-bk-l { background-color: var(--grapefruit); }
+.ylw-bk-d { background-color: var(--marigold); }
+.ylw-bk-m { background-color: var(--goldenrod); }
+.ylw-bk-l { background-color: var(--wheat); }
+.grn-bk-d { background-color: var(--pine); }
+.grn-bk-m { background-color: var(--clover); }
+.grn-bk-l { background-color: var(--sage); }
+.blu-bk-d { background-color: var(--atlantic); }
+.blu-bk-m { background-color: var(--oxygen); }
+.blu-bk-l { background-color: var(--glacier); }
+.prp-bk-d { background-color: var(--plum); }
+.prp-bk-m { background-color: var(--wisteria); }
+.prp-bk-l { background-color: var(--seltzer); }
+.gry-bk-d { background-color: var(--charcoal); }
+.gry-bk-m { background-color: var(--shark); }
+.gry-bk-l { background-color: var(--tin); }
+
+
+/* BASIC STYLES */
+
+body {
+    background-color: var(--p-bk);
+    color: var(--p-txt);
+    font-family: 'opensans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: .3s;
+}
+
+h1, h3, h5, p {
+    color: var(--p-txt);
+}
+h2, h4, h6 {
+    color: var(--a-txt-k);
+}
+h1, h2, h4, h6 {
+    font-weight: 700;
+}
+h5, h3 {
+    font-weight: 300;
+}
+h1 {
+    font-size: 2em;
+}
+h2, h3 {
+    font-size: 1.3em;
+}
+h4, h5 {
+    font-size: 1em;
+}
+h6 {
+    font-size: 0.8em;
+}
+
+/*** NAVBAR ***/
+
+.main-nav {
+    background-color: var(--void);
+    transition: .6s;
+}
+.sub-navbar {
+    justify-content: space-between;
+}
+.nav-items{
+    margin-left: 6.25em;
+}
+.nav-i {
+    display: inline-block;
+    text-decoration: none;
+    /* color: var(--ghost); */
+    margin-right: 2em;
+    font-weight: 600;
+}
+.nav-i:hover {
+    /* color: var(--ghost); */
+    opacity: 0.5;
+}
+
+/*** MODE TOGGLE ***/
+
+.navbar{
+    justify-content: space-between;
+}
+.mode{
+    padding: 0!important;
+    position:fixed;
+    bottom: 1em;
+    right: 2.5em;
+}
+.current-mode {
+    margin-right: 6em;
+}
+.mode-button {
+    display: inline-block;
+    background:0;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 2em;
+    height: 2em;
+    position: relative;
+}
+.mode-button span:nth-child(1) {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 60px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: var(--toggle-back);
+    box-shadow: inset 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: .5s;
+}
+.mode-button span:nth-child(2) {
+    background-image: var(--toggle-img);
+    background-size: auto 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    left: var(--toggle-pos);
+    width: 30px;
+    height: 30px;
+    background-color: var(--toggle-front);
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 rgb(0 0 0 / 40%);
+    transition: .3s;
+}
