@@ -1,0 +1,28 @@
+{
+  "name": "estuary",
+  "version": "1.0.0",
+  "description": "Data visualization software",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kgerot/estuary.git"
+  },
+  "author": "Katherine Gerot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kgerot/estuary/issues"
+  },
+  "homepage": "https://github.com/kgerot/estuary#readme",
+  "devDependencies": {
+    "electron": "^18.2.0"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.8",
+    "bootstrap": "^5.1.3",
+    "fontawesome": "^5.6.3",
+    "fontawesome-free": "^1.0.4"
+  }
+}
