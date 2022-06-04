@@ -1,5 +1,5 @@
-*build tag*
-*dependencies tag(s)*
+_build tag_
+_dependencies tag(s)_
 
 # Electron Boilerplate
 
@@ -9,8 +9,12 @@ The boilerplate comes with a stylesheet that mimics some aspects of Bootstrap, b
 
 ## Install & Launch
 
-To install the application:
-1. Clone the repository as desired
+To install:
 
-To launch locally:
-1. ...
+1. Clone the repository as desired
+2. Navigate into the repository on a terminal/cmd of your choosing
+3. Type `npm i` to ensure node modules are installed
+
+To launch:
+
+1. Type `npm start` to launch the application
