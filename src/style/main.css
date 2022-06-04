@@ -54,9 +54,11 @@
 :root{
     --black: #141414;
     --void: #2F2F2F;
+    --smoke: #515151;
     --charcoal: #737373;
     --shark: #A6A6A6;
     --tin: #D8D4D4;
+    --sheen: #EAE7E7;
     --ghost: #FFFFFF;
     /* Reds */
     --redwood: #A55850;
@@ -90,6 +92,7 @@
     Primary Text:           --p-txt
     Accent Text(s):         --a-txt-x
     Offset Color:           --off
+    Shadow Color:           --shadow
     COLOR MODE FUNCTIONALITY
     Icon on Toggle:         --toggle-img
     Toggle Position:        --toggle-pos
@@ -111,12 +114,15 @@
     --a-txt-b: var(--atlantic);
     --a-txt-p: var(--plum);
     --a-txt-k: var(--charcoal);
-    --off: var(--tin);
+    --shadow: var(--shark);
+    --off: var(--sheen);
     /* toggle */
     --toggle-back: var(--wheat);
     --toggle-front: var(--marigold);
     --toggle-img: url('../img/sun-solid-ghost.svg');
     --toggle-pos: 0px;
+    /*tables*/
+    --tbl-head: var(--shark);
 }
 :root[mode="dark"] {
     --p-bk: var(--void);
@@ -125,7 +131,7 @@
     --a-bk-g: var(--pine);
     --a-bk-b: var(--atlantic);
     --a-bk-p: var(--plum);
-    --a-bk-k: var(--charcoal);
+    --a-bk-k: var(--smoke);
     --p-txt: var(--ghost);
     --a-txt-r: var(--grapefruit);
     --a-txt-y: var(--wheat);
@@ -133,12 +139,15 @@
     --a-txt-b: var(--glacier);
     --a-txt-p: var(--wisteria);
     --a-txt-k: var(--tin);
-    --off: var(--charcoal);
+    --shadow: var(--black);
+    --off: var(--smoke);
     /*toggle*/
     --toggle-back: var(--oxygen);
     --toggle-front: var(--void);
     --toggle-img: url('../img/moon-solid-atlantic.svg');
     --toggle-pos: 2em;
+    /*tables*/
+    --tbl-head: var(--black);
 }
 
 /*** COLOR CLASS DEFINITIONS ***/
@@ -254,8 +263,20 @@ h6 {
     font-size: 0.75rem;
 }
 
+a {
+    color: var(--a-txt-b);
+    text-decoration: underline solid 1px;
+    transition: 0.3s;
+}
+a:hover {
+    color: var(--a-txt-g);
+}
+a:visited {
+    color: var(--a-txt-p);
+}
 abbr[title] {
     text-decoration: underline solid 0.5px;
+    transition: 0.2s;
 }
 b, strong {
     font-weight: bolder;
@@ -266,18 +287,53 @@ blockquote {
     padding-left: 1rem;
     border-left: var(--a-bk-k) solid;
 }
+caption {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--a-txt-k);
+}
+code {
+    color: var(--a-txt-r);
+    unicode-bidi: bidi-override;
+    font-weight: 600;
+}
 hr {
     margin: 1rem 0;
     color: inherit;
-    background-color: var(--off);
+    background-color: var(--a-bk-k);
     border: 0;
+    transition: 0.3s;
 }
 hr:not([size]) {
     height: 1px;
 }
+img, svg {
+    vertical-align: middle;
+}
+kbd {
+    display: inline-block;
+    padding: 0 0.3rem;
+    font-weight: 600;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: var(--a-txt-k);
+    background-color: var(--a-bk-k);
+    box-shadow: 1.5px 1.5px 1.5px var(--shadow);
+    border-radius: 3px;
+    border: rgb(0 0 0 / 20%) solid 0.5px;
+    transition: .3s;
+}
 mark, .mark {
     padding: 0.2rem;
     background-color: var(--a-bk-k);
+    color: var(--p-txt);
+    transition: 0.3s;
+}
+pre {
+    display: block;
+    unicode-bidi: bidi-override;
+    overflow: auto;
 }
 small, .small {
     font-size: 0.75rem;
@@ -294,28 +350,40 @@ sup {
 sub {
     bottom: -0.25rem;
 }
+table {
+    width: 100%;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+th {
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    text-align: inherit;
+}
+thead {
+    background-color: var(--tbl-head);
+}
+tr:nth-child(even) {
+    background-color: var(--off);
+    transition: 0.2s;
+}
+td {
+    padding: 0.5rem 1rem;
+}
 
 /*** NAVBAR ***/
-
 .main-nav {
-    background-color: var(--void);
-    transition: .6s;
-}
-.sub-navbar {
-    justify-content: space-between;
-}
-.nav-items{
-    margin-left: 6.25rem;
+    box-shadow: 2px 3px 5px var(--shadow);
 }
 .nav-i {
+    color: var(--a-txt-b);
     display: inline-block;
     text-decoration: none;
-    /* color: var(--ghost); */
     margin-right: 2em;
     font-weight: 600;
 }
 .nav-i:hover {
-    /* color: var(--ghost); */
+    color: var(--a-txt-b);
     opacity: 0.5;
 }
 
