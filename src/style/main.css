@@ -87,12 +87,12 @@
 
 /* 
     GLOBAL COLORS
-    Primary Background:     --p-bk
+    Primary Background:     --bk
     Accent Background(s):   --a-bk-x
-    Primary Text:           --p-txt
+    Primary Text:           --txt
     Accent Text(s):         --a-txt-x
-    Offset Color:           --off
-    Shadow Color:           --shadow
+    bk-lightset Color:           --bk-light
+    bk-dark Color:           --bk-dark
     COLOR MODE FUNCTIONALITY
     Icon on Toggle:         --toggle-img
     Toggle Position:        --toggle-pos
@@ -100,22 +100,35 @@
     Toggle Switch Color:    --toggle-front
 */
 :root[mode="light"] {
-    --p-bk: var(--ghost);
-    --a-bk-r: var(--grapefruit);
-    --a-bk-y: var(--wheat);
-    --a-bk-g: var(--sage);
-    --a-bk-b: var(--glacier);
-    --a-bk-p: var(--wisteria);
-    --a-bk-k: var(--tin);
-    --p-txt: var(--void);
-    --a-txt-r: var(--redwood);
-    --a-txt-y: var(--marigold);
-    --a-txt-g: var(--pine);
-    --a-txt-b: var(--atlantic);
-    --a-txt-p: var(--plum);
-    --a-txt-k: var(--charcoal);
-    --shadow: var(--shark);
-    --off: var(--sheen);
+    --bk: var(--ghost);
+    --bk-light: var(--sheen);
+    --bk-dark: var(--tin);
+    --txt: var(--void);
+    --txt-dark: var(--black);
+    --txt-light: var(--smoke);
+    --r-100: var(--grapefruit);
+    --y-100: var(--wheat);
+    --g-100: var(--sage);
+    --b-100: var(--glacier);
+    --p-100: var(--seltzer);
+    --r-200: var(--rose);
+    --y-200: var(--goldenrod);
+    --g-200: var(--clover);
+    --b-200: var(--oxygen);
+    --p-200: var(--wisteria);
+    --r-300: var(--redwood);
+    --y-300: var(--marigold);
+    --g-300: var(--pine);
+    --b-300: var(--atlantic);
+    --p-300: var(--plum);
+    --k-100: var(--ghost);
+    --k-200: var(--sheen);
+    --k-300: var(--tin);
+    --k-400: var(--shark);
+    --k-500: var(--charcoal);
+    --k-600: var(--smoke);
+    --k-700: var(--void);
+    --k-800: var(--black);
     /* toggle */
     --toggle-back: var(--wheat);
     --toggle-front: var(--marigold);
@@ -125,27 +138,41 @@
     --tbl-head: var(--shark);
 }
 :root[mode="dark"] {
-    --p-bk: var(--void);
-    --a-bk-r: var(--redwood);
-    --a-bk-y: var(--marigold);
-    --a-bk-g: var(--pine);
-    --a-bk-b: var(--atlantic);
-    --a-bk-p: var(--plum);
-    --a-bk-k: var(--smoke);
-    --p-txt: var(--ghost);
-    --a-txt-r: var(--grapefruit);
-    --a-txt-y: var(--wheat);
-    --a-txt-g: var(--sage);
-    --a-txt-b: var(--glacier);
-    --a-txt-p: var(--wisteria);
-    --a-txt-k: var(--tin);
-    --shadow: var(--black);
-    --off: var(--smoke);
+    --txt: var(--ghost);
+    --txt-light: var(--sheen);
+    --txt-dark: var(--tin);
+    --bk: var(--void);
+    --bk-dark: var(--black);
+    --bk-light: var(--smoke);
+    --r-100: var(--redwood);
+    --y-100: var(--marigold);
+    --g-100: var(--pine);
+    --b-100: var(--atlantic);
+    --p-100: var(--plum);
+    --r-200: var(--rose);
+    --y-200: var(--goldenrod);
+    --g-200: var(--clover);
+    --b-200: var(--oxygen);
+    --p-200: var(--wisteria);
+    --r-300: var(--grapefruit);
+    --y-300: var(--wheat);
+    --g-400: var(--sage);
+    --b-500: var(--glacier);
+    --p-600: var(--seltzer);
+    --k-100: var(--tin);
+    --k-100: var(--black);
+    --k-200: var(--void);
+    --k-300: var(--smoke);
+    --k-400: var(--charcoal);
+    --k-500: var(--shark);
+    --k-600: var(--tin);
+    --k-700:var(--sheen);
+    --k-800: var(--ghost);
     /*toggle*/
     --toggle-back: var(--oxygen);
-    --toggle-front: var(--void);
+    --toggle-front: var(--smoke);
     --toggle-img: url('../img/moon-solid-atlantic.svg');
-    --toggle-pos: 2em;
+    --toggle-pos: 32px;
     /*tables*/
     --tbl-head: var(--black);
 }
@@ -226,8 +253,8 @@
 
 body {
     margin: 0;
-    background-color: var(--p-bk);
-    color: var(--p-txt);
+    background-color: var(--bk);
+    color: var(--txt);
     font-family: 'opensans', sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -239,15 +266,15 @@ body {
 }
 
 h1, h3, h5, p {
-    color: var(--p-txt);
+    color: var(--txt);
 }
 h2, h4, h6 {
-    color: var(--a-txt-k);
+    color: var(--k-500);
 }
-h1, h2, h4, h6 {
+h1, h2, h4 {
     font-weight: 700;
 }
-h5, h3 {
+h5, h3, h6 {
     font-weight: 300;
 }
 h1 {
@@ -256,27 +283,28 @@ h1 {
 h2, h3 {
     font-size: 1.3rem;
 }
-h4, h5 {
+h4, h5, h6 {
     font-size: 1rem;
-}
-h6 {
-    font-size: 0.75rem;
+    margin: 1px 1px 0 0;
 }
 
 a {
-    color: var(--a-txt-b);
+    color: var(--b-200);
     text-decoration: underline solid 1px;
     transition: 0.3s;
 }
 a:hover {
-    color: var(--a-txt-g);
+    color: var(--b-100);
 }
 a:visited {
-    color: var(--a-txt-p);
+    color: var(--b-300);
 }
 abbr[title] {
     text-decoration: underline solid 0.5px;
     transition: 0.2s;
+}
+audio::-webkit-media-controls-panel {
+    border:0;
 }
 b, strong {
     font-weight: bolder;
@@ -285,7 +313,30 @@ blockquote {
     color: var(--a-txt-k);
     margin: 1rem 0.5rem;
     padding-left: 1rem;
-    border-left: var(--a-bk-k) solid;
+    border-left: var(--k-100) solid;
+}
+button {
+    background-color: transparent;
+    border: 2px solid var(--txt);
+    color: var(--txt);
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 700;
+    outline: none;
+    padding: 1em 1.5em;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all .3s ease-in-out;
+    user-select: none;
+}
+
+button:hover {
+    background-color: var(--k-400);
+    box-shadow: none;
 }
 caption {
     padding-top: 0.5rem;
@@ -300,7 +351,7 @@ code {
 hr {
     margin: 1rem 0;
     color: inherit;
-    background-color: var(--a-bk-k);
+    background-color: var(--k-100);
     border: 0;
     transition: 0.3s;
 }
@@ -318,16 +369,16 @@ kbd {
     letter-spacing: 1px;
     font-size: 1rem;
     color: var(--a-txt-k);
-    background-color: var(--a-bk-k);
-    box-shadow: 1.5px 1.5px 1.5px var(--shadow);
+    background-color: var(--k-100);
+    box-shadow: 1.5px 1.5px 1.5px var(--bk-dark);
     border-radius: 3px;
     border: rgb(0 0 0 / 20%) solid 0.5px;
     transition: .3s;
 }
 mark, .mark {
     padding: 0.2rem;
-    background-color: var(--a-bk-k);
-    color: var(--p-txt);
+    background-color: var(--k-100);
+    color: var(--txt);
     transition: 0.3s;
 }
 pre {
@@ -364,7 +415,7 @@ thead {
     background-color: var(--tbl-head);
 }
 tr:nth-child(even) {
-    background-color: var(--off);
+    background-color: var(--bk-light);
     transition: 0.2s;
 }
 td {
@@ -373,7 +424,7 @@ td {
 
 /*** NAVBAR ***/
 .main-nav {
-    box-shadow: 2px 3px 5px var(--shadow);
+    box-shadow: 2px 3px 5px var(--bk-dark);
 }
 .nav-i {
     color: var(--a-txt-b);
