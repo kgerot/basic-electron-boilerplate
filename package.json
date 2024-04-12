@@ -1,21 +1,21 @@
 {
-  "name": "estuary",
+  "name": "boilerplace",
   "version": "1.0.0",
-  "description": "Data visualization software",
+  "description": "A Boilerplate Electron App",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kgerot/estuary.git"
+    "url": "git+https://github.com/kgerot/basic-electron-boilerplate.git"
   },
   "author": "Katherine Gerot",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kgerot/estuary/issues"
+    "url": "https://github.com/kgerot/basic-electron-boilerplate/issues"
   },
-  "homepage": "https://github.com/kgerot/estuary#readme",
+  "homepage": "https://github.com/kgerot/basic-electron-boilerplate#readme",
   "devDependencies": {
     "electron": "^18.2.0"
   },
